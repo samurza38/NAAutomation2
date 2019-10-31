@@ -16,8 +16,8 @@ public class ExcelRead
        FileInputStream fs=new FileInputStream(file);
        Workbook wb=new HSSFWorkbook(fs);
        Sheet sh=wb.getSheet("Sheet1");
-       Row  rw=sh.getRow(0);
-       Cell celll=rw.getCell(0);
+       Row  rw=sh.getRow(1);
+       Cell celll=rw.getCell(1);
        System.out.println(celll.getStringCellValue());
    }
 }
